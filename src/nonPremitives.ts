@@ -10,12 +10,17 @@ console.log(couple)
 
 // optional type
 let user:{
+    readonly optionalName: string, /*readOnly  holo access modifire thats mean ami kokhono optionalName object er value ta change krte parbo na like lastName */
     firstName:string,
     middleName?:string, /*ekhane optional type ? diye deoate ami middleName object ta na rakhateo user variable ta te error dekhache na */
     lastName:string,
     isNMarried:boolean,
 }={
+    optionalName:'x',
     firstName:'Nobanita',
     lastName:'Ayathree',
     isNMarried:true,
 }
+
+user.lastName='Pooja'
+console.log(user)
